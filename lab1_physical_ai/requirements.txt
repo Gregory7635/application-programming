@@ -1,0 +1,6 @@
+mujoco>=3.0
+numpy
+scipy
+matplotlib
+jupyter
+python-docx
