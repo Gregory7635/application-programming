@@ -1,0 +1,37 @@
+<!-- Вариант 5: двойной обратный маятник на тележке (double inverted pendulum on a cart) -->
+<mujoco model="double_cartpole">
+  <compiler angle="radian"/>
+  <!-- 0.002 с = 500 Гц, шаг физики -->
+  <option timestep="0.002"/>
+
+  <visual>
+    <global offwidth="1280" offheight="720"/>
+  </visual>
+
+  <worldbody>
+    <light pos="0 -3 3" dir="0 1 -1"/>
+    <geom name="floor" type="plane" pos="0 0 -0.1" size="4 1 0.1" rgba="0.9 0.9 0.9 1" contype="0" conaffinity="0"/>
+    <geom name="rail" type="capsule" fromto="-3 0 0 3 0 0" size="0.01" rgba="0.3 0.3 0.3 1" contype="0" conaffinity="0"/>
+
+    <body name="cart" pos="0 0 0">
+      <joint name="slider" type="slide" axis="1 0 0" damping="0.1"/>
+      <geom name="cart" type="box" size="0.15 0.08 0.05" mass="1.0" rgba="0.5 0.5 0.5 1" contype="0" conaffinity="0"/>
+
+      <!-- первое звено: 0.5 м, 0.3 кг -->
+      <body name="pole1" pos="0 0 0.05">
+        <joint name="hinge1" type="hinge" axis="0 1 0" damping="0.002"/>
+        <geom name="pole1" type="capsule" fromto="0 0 0 0 0 0.5" size="0.02" mass="0.3" rgba="0.8 0.2 0.2 1" contype="0" conaffinity="0"/>
+
+        <!-- второе звено: 0.5 м, 0.2 кг; угол hinge2 отсчитывается относительно первого звена -->
+        <body name="pole2" pos="0 0 0.5">
+          <joint name="hinge2" type="hinge" axis="0 1 0" damping="0.002"/>
+          <geom name="pole2" type="capsule" fromto="0 0 0 0 0 0.5" size="0.02" mass="0.2" rgba="0.2 0.4 0.8 1" contype="0" conaffinity="0"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="cart_motor" joint="slider" ctrlrange="-40 40" ctrllimited="true"/>
+  </actuator>
+</mujoco>

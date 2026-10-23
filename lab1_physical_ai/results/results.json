@@ -1,0 +1,488 @@
+{
+  "model": {
+    "timestep": 0.002,
+    "physics_hz": 500.0,
+    "unstable_eigs_continuous": [
+      4.33449179130313,
+      9.287307850831587
+    ],
+    "K_lqr_500": [
+      9.634,
+      85.242,
+      261.961,
+      14.23,
+      39.916,
+      37.025
+    ]
+  },
+  "baseline": {
+    "theta0": 0.05,
+    "fall_time": 0.7020000000000001
+  },
+  "chaos": {
+    "eps": 1e-06,
+    "divergence_time_0p1rad": 4.066
+  },
+  "perception": {
+    "camera_max_error_rad": 0.36391284427439397
+  },
+  "pd_vs_lqr": {
+    "PD по θ1 (Kp=20, Kd=5)": 0.92,
+    "PD по θ1 (Kp=200, Kd=20)": 0.6940000000000001,
+    "LQR (6 переменных состояния)": null
+  },
+  "frequency": {
+    "physics_hz": 2000,
+    "rows": [
+      {
+        "freq": 1000,
+        "fall_time": null,
+        "stable": true,
+        "max_theta_after_5s": 0.0010705547794396435,
+        "u_max": 30.877807688690005
+      },
+      {
+        "freq": 500,
+        "fall_time": null,
+        "stable": true,
+        "max_theta_after_5s": 0.0018730323526994254,
+        "u_max": 26.112180103638565
+      },
+      {
+        "freq": 200,
+        "fall_time": null,
+        "stable": true,
+        "max_theta_after_5s": 0.002847063237666962,
+        "u_max": 15.855444468720577
+      },
+      {
+        "freq": 100,
+        "fall_time": null,
+        "stable": true,
+        "max_theta_after_5s": 0.003304514535400169,
+        "u_max": 10.934770486714994
+      },
+      {
+        "freq": 50,
+        "fall_time": null,
+        "stable": true,
+        "max_theta_after_5s": 0.007386484455306755,
+        "u_max": 9.12135406926092
+      },
+      {
+        "freq": 20,
+        "fall_time": 0.8999999999999999,
+        "stable": false,
+        "max_theta_after_5s": null,
+        "u_max": 40.0
+      }
+    ],
+    "scan": [
+      {
+        "freq": 50,
+        "fall_time": null
+      },
+      {
+        "freq": 48,
+        "fall_time": null
+      },
+      {
+        "freq": 46,
+        "fall_time": null
+      },
+      {
+        "freq": 44,
+        "fall_time": null
+      },
+      {
+        "freq": 42,
+        "fall_time": null
+      },
+      {
+        "freq": 40,
+        "fall_time": null
+      },
+      {
+        "freq": 38,
+        "fall_time": null
+      },
+      {
+        "freq": 36,
+        "fall_time": null
+      },
+      {
+        "freq": 34,
+        "fall_time": null
+      },
+      {
+        "freq": 32,
+        "fall_time": null
+      },
+      {
+        "freq": 30,
+        "fall_time": null
+      },
+      {
+        "freq": 28,
+        "fall_time": null
+      },
+      {
+        "freq": 26,
+        "fall_time": null
+      },
+      {
+        "freq": 24,
+        "fall_time": null
+      },
+      {
+        "freq": 22,
+        "fall_time": 1.2165
+      },
+      {
+        "freq": 20,
+        "fall_time": 0.8999999999999999
+      }
+    ],
+    "min_stable_freq": 24
+  },
+  "delay": {
+    "rows": [
+      {
+        "delay_ms": 0,
+        "delay_steps": 0,
+        "actual_ms": 0.0,
+        "fall_time": null,
+        "stable": true
+      },
+      {
+        "delay_ms": 5,
+        "delay_steps": 3,
+        "actual_ms": 6.0,
+        "fall_time": null,
+        "stable": true
+      },
+      {
+        "delay_ms": 10,
+        "delay_steps": 5,
+        "actual_ms": 10.0,
+        "fall_time": null,
+        "stable": true
+      },
+      {
+        "delay_ms": 20,
+        "delay_steps": 10,
+        "actual_ms": 20.0,
+        "fall_time": null,
+        "stable": true
+      },
+      {
+        "delay_ms": 50,
+        "delay_steps": 25,
+        "actual_ms": 50.0,
+        "fall_time": 0.658,
+        "stable": false
+      },
+      {
+        "delay_ms": 100,
+        "delay_steps": 50,
+        "actual_ms": 100.0,
+        "fall_time": 0.44,
+        "stable": false
+      },
+      {
+        "delay_ms": 200,
+        "delay_steps": 100,
+        "actual_ms": 200.0,
+        "fall_time": 0.448,
+        "stable": false
+      }
+    ],
+    "scan": [
+      {
+        "delay_ms": 20,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 22,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 24,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 26,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 28,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 30,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 32,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 34,
+        "fall_time": 1.12
+      },
+      {
+        "delay_ms": 36,
+        "fall_time": 0.902
+      },
+      {
+        "delay_ms": 38,
+        "fall_time": 0.804
+      },
+      {
+        "delay_ms": 40,
+        "fall_time": 0.8320000000000001
+      },
+      {
+        "delay_ms": 42,
+        "fall_time": 0.668
+      },
+      {
+        "delay_ms": 44,
+        "fall_time": 0.652
+      },
+      {
+        "delay_ms": 46,
+        "fall_time": 0.684
+      },
+      {
+        "delay_ms": 48,
+        "fall_time": 0.636
+      },
+      {
+        "delay_ms": 50,
+        "fall_time": 0.658
+      }
+    ],
+    "max_stable_delay_ms": 32,
+    "first_fail_delay_ms": 34,
+    "scan_theta0_0p15": [
+      {
+        "delay_ms": 0,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 2,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 4,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 6,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 8,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 10,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 12,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 14,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 16,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 18,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 20,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 22,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 24,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 26,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 28,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 30,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 32,
+        "fall_time": null
+      },
+      {
+        "delay_ms": 34,
+        "fall_time": 0.968
+      },
+      {
+        "delay_ms": 36,
+        "fall_time": 0.894
+      },
+      {
+        "delay_ms": 38,
+        "fall_time": 0.682
+      },
+      {
+        "delay_ms": 40,
+        "fall_time": 0.584
+      },
+      {
+        "delay_ms": 42,
+        "fall_time": 0.614
+      },
+      {
+        "delay_ms": 44,
+        "fall_time": 0.532
+      },
+      {
+        "delay_ms": 46,
+        "fall_time": 0.548
+      },
+      {
+        "delay_ms": 48,
+        "fall_time": 0.47000000000000003
+      },
+      {
+        "delay_ms": 50,
+        "fall_time": 0.438
+      }
+    ],
+    "max_stable_delay_ms_theta0_0p15": 32
+  },
+  "failop": {
+    "fault_time": 2.0,
+    "fault_sigma": 0.1,
+    "rows": [
+      {
+        "detector": false,
+        "falls": 10,
+        "runs": 10,
+        "mean_fall_time": 2.6422,
+        "mean_time_after_fault": 0.6421999999999999,
+        "max_theta_survived": null,
+        "detect_delay_ms": null
+      },
+      {
+        "detector": true,
+        "falls": 0,
+        "runs": 10,
+        "mean_fall_time": null,
+        "mean_time_after_fault": null,
+        "max_theta_survived": 0.33220843434448777,
+        "detect_delay_ms": 1.0000000000000675
+      }
+    ],
+    "false_alarms": 0,
+    "K_soft": [
+      0.308,
+      6.732,
+      132.596,
+      1.068,
+      12.337,
+      17.411
+    ]
+  },
+  "roa": [
+    {
+      "theta0": 0.05,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.1479345382119818
+    },
+    {
+      "theta0": 0.1,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.2929753194819646
+    },
+    {
+      "theta0": 0.15,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.4337550633755794
+    },
+    {
+      "theta0": 0.2,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.5677825493470989
+    },
+    {
+      "theta0": 0.25,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.691143147782956
+    },
+    {
+      "theta0": 0.3,
+      "fall_time": null,
+      "u_sat_share": 0.0,
+      "max_cart_x": 0.797971774831948
+    },
+    {
+      "theta0": 0.35,
+      "fall_time": null,
+      "u_sat_share": 0.001,
+      "max_cart_x": 0.8778438095919804
+    },
+    {
+      "theta0": 0.4,
+      "fall_time": 1.422,
+      "u_sat_share": 0.4866385372714487,
+      "max_cart_x": 1.2587334855607346
+    },
+    {
+      "theta0": 0.45,
+      "fall_time": 0.486,
+      "u_sat_share": 0.5473251028806584,
+      "max_cart_x": 1.8283933503320433
+    },
+    {
+      "theta0": 0.5,
+      "fall_time": 0.48000000000000004,
+      "u_sat_share": 0.6291666666666667,
+      "max_cart_x": 1.797848023725561
+    },
+    {
+      "theta0": 0.55,
+      "fall_time": 0.466,
+      "u_sat_share": 0.8111587982832618,
+      "max_cart_x": 1.9102208639441072
+    },
+    {
+      "theta0": 0.6,
+      "fall_time": 0.358,
+      "u_sat_share": 0.7821229050279329,
+      "max_cart_x": 0.987393454540515
+    }
+  ],
+  "timing": {
+    "perception_planning_us": 14.71343999983219,
+    "physics_step_us": 2.530540000225301,
+    "deadline_us": 2000
+  }
+}
